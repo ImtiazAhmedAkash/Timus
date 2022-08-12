@@ -8,8 +8,12 @@ int main()
 
     scanf("%d %d", &harry, &larry);
 
-    printf("%d %d\n", 10 - harry, 10 - larry);
-    // maximum 10 cans can be on the log
+    // max represents total number of cans
+    // both of them shoot a can at the same time
+    // that's why 1 was subtracted
+    int max = harry + larry - 1;
+    
+    printf("%d %d\n", max - harry, max - larry);
 
     return 0;
 }
