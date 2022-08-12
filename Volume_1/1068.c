@@ -16,15 +16,15 @@ int main()
         return 0;
     }
 
-    sum = abs(input) * (abs(input) + 1) / 2; 
-    // n(n+1)/2
+    // 1 + 2 + ... + n = n * (n + 1) / 2
     // input value can be negative,
     // so taking the absolute value
+    sum = abs(input) * (abs(input) + 1) / 2; 
 
+    // if the input is negative (except input == -1), 
+    // sum will be negative, sum = 1 - sum
     if (input < 0)
         sum = 1 - sum;
-        // if the input is negative (except -1), 
-        // sum will be negative, sum = 1 - sum
     
     printf("%lld\n", sum);
 
